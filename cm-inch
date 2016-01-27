@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    function conversion_cm()
+    {
+
+        var cm = document.getElementById("cm");
+        var inch = document.getElementById("inch");
+
+        inch.value = cm.value/2.54;
+
+        /*
+        else if (cm.value == "")
+        {
+            cm.value = inch.value*2.54;
+        }
+        else if (inch.value == "")
+        {
+            inch.value = cm.value/2.54;
+        }
+        else
+        {
+
+        }
+        */
+        //<input type="button" id="press" value="convert" onclick="conversion()">
+    }
+    function conversion_inch()
+    {
+
+        var cm = document.getElementById("cm");
+        var inch = document.getElementById("inch");
+
+        cm.value = inch.value * 2.54;
+    }
+
+</script>
+
+<form name="myForm">
+    <br>
+    <input type="text" id="cm" value="2.54" onkeyup="conversion_cm()">&#160&#160cm<-->inch&#160&#160<input type="text" id="inch" value="1" onkeyup="conversion_inch()">
+
+
+</form>
+
+</body>
+</html>
