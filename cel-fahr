@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/javascript">
+    //1ºC= 33.80000ºF
+    function conversion_cel()
+    {
+
+        var cel = document.getElementById("cel");
+        var fah = document.getElementById("fah");
+
+        fah.value = cel.value*33.80000;
+
+
+    }
+    function conversion_fah()
+    {
+
+        var cel = document.getElementById("km");
+        var fah = document.getElementById("miles");
+
+        cel.value = fah.value/33.80000;
+    }
+</script>
+
+<form name="myForm">
+    <br>
+    <input type="text" id="cel" value="1"> &#160&#160 celsius<-->fahrenheit &#160&#160 <input type="text" id="fah" value="33.80000">
+
+
+</form>
+
+<script type="text/javascript">
+
+    document.getElementById("fah").addEventListener("keyup", conversion_fah);
+
+    document.getElementById("cel").addEventListener("keyup", conversion_cel);
+
+</script>
+
+
+
+</body>
+</html>
