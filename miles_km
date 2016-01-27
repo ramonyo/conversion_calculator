@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    //1 mile = 1.609344 kilometers
+    function conversion_miles()
+    {
+
+        var km = document.getElementById("km");
+        var miles = document.getElementById("miles");
+
+        km.value = miles.value*1.609344;
+
+
+    }
+    function conversion_km()
+    {
+
+        var km = document.getElementById("km");
+        var miles = document.getElementById("miles");
+
+        miles.value = km.value/1.609344;
+    }
+
+
+</script>
+
+
+
+
+<form name="myForm">
+    <br>
+    <input type="text" id="miles" value="1"> &#160&#160 miles<-->km &#160&#160 <input type="text" id="km" value="1.609344">
+
+
+</form>
+
+<script type="text/javascript">
+
+    document.getElementById("miles").addEventListener("keyup", conversion_miles);
+
+    document.getElementById("km").addEventListener("keyup", conversion_km);
+
+</script>
+
+</body>
+</html>
