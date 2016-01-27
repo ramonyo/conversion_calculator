@@ -1,34 +1,12 @@
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-        "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Simple Validation</title> <script type="text/javascript"> function checkValid()
-{
-    if(document.formexample.password1.value!==document.formexample.password2.value)
-    {
-        var ob = document.getElementById("password");
-        ob.style.border = "1px solid red";
-    }
-    else
-    {
-        var ob = document.getElementById("password");
-        ob.style.border = "1px solid white";
-    }
-}
-</script>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
-<body>
-
+<br>
+    <a href="cel_far.html">Celsius - Fahrenheit converter</a></br>
+    <a href="cm_inch.html">Cm - Inch converter</a></br>
+    <a href="miles_km.html">Miles - Km converter</a>
 </body>
-
-<form name="formexample" id="formexample" action="#" > <div id="username">
-    Username: <input id="username" name="username" /> </div>
-    <div id="password">
-        password: <input type="password" id="password1" name="password1" />
-        password: <input type="password" id="password2" name="password2" onChange="checkValid()"/>
-    </div>
-    <div>
-        <input id="submit" type="submit"> </div>
-</form>
 </html>
